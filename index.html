@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QR Spark - Universal QR Generator</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="script.css">
+
+</head>
+
+<body>
+
+
+<div class="background-animation">
+
+    <span class="floating-item item1">💖</span>
+    <span class="floating-item item2">✨</span>
+    <span class="floating-item item3">🌈</span>
+    <span class="floating-item item4">💜</span>
+    <span class="floating-item item5">⭐</span>
+    <span class="floating-item item6">🩷</span>
+    <span class="floating-item item7">✨</span>
+    <span class="floating-item item8">💙</span>
+    <span class="floating-item item9">🌸</span>
+    <span class="floating-item item10">⭐</span>
+
+</div>  
+    <div class="container">
+
+        <div class="logo">
+            ✨ QR Spark
+        </div>
+
+        <h1>Create Your QR Code</h1>
+
+        <p class="subtitle">
+            Turn your links, text, phone numbers and emails into a QR code.
+        </p>
+
+
+        <div class="main-content">
+
+            <!-- LEFT SIDE -->
+
+            <div class="generator-card">
+
+                <h2>QR Details</h2>
+
+
+                <label>Select QR Type</label>
+
+                <select id="qrType">
+
+                    <option value="WEBSITE">
+                        🌐 Website / URL
+                    </option>
+
+                    <option value="TEXT">
+                        📝 Plain Text
+                    </option>
+
+                    <option value="PHONE">
+                        📞 Phone Number
+                    </option>
+
+                    <option value="EMAIL">
+                        ✉️ Email
+                    </option>
+
+                </select>
+
+
+                <label id="inputLabel">
+                    Enter Website URL
+                </label>
+
+
+                <input
+                    type="text"
+                    id="qrData"
+                    placeholder="https://example.com"
+                >
+
+
+                <div class="error" id="errorMessage"></div>
+
+
+                <button
+                    class="generate-btn"
+                    onclick="generateQR()"
+                >
+                    ✨ Generate QR Code
+                </button>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="preview-card">
+
+                <h2>Your QR Code</h2>
+
+
+                <div class="qr-box">
+
+                    <p class="placeholder" id="placeholder">
+                        Your QR code will appear here ✨
+                    </p>
+
+
+                    <img
+                        id="qrImage"
+                        style="display:none;"
+                        alt="Generated QR Code"
+                    >
+
+                </div>
+
+
+                <button
+                    class="download-btn"
+                    id="downloadBtn"
+                    onclick="downloadQR()"
+                >
+                    ⬇ Download QR Code
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FEATURES -->
+
+        <div class="info">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⚡
+                </div>
+
+                <h3>Fast</h3>
+
+                <p>
+                    Generate your QR code instantly.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🎨
+                </div>
+
+                <h3>Simple</h3>
+
+                <p>
+                    Choose a type and enter your information.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⬇️
+                </div>
+
+                <h3>Download</h3>
+
+                <p>
+                    Download your generated QR code easily.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Connect JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
