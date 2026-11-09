@@ -138,7 +138,7 @@ async function generateQR() {
 
         const response = await fetch(
 
-            "https://universalqrcodegenerator.up.railway.app/api/qr",
+            "https://demo-production-755d.up.railway.app/api/qr",
 
             {
                 method: "POST",
